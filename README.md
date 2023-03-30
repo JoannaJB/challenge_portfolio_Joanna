@@ -12,6 +12,6 @@ Mam nadzieję, że dzięki kursowi nauczę się pisać lepszej jakości testy, k
 Bardzo cieszę się na ten kurs i jestem zmotywowana do zdobywania nowych informacji, jak również sprawdzenie moich dotychczasowych umiejętności.
 
 
-###### Super inicjatywa,
-###### Pozdrawiam,
-###### Asia
+###### *Super inicjatywa,*
+###### *Pozdrawiam,*
+###### *Asia*
