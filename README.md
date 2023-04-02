@@ -1,6 +1,6 @@
 
 ### **Task 1: Konfiguracja oprogramowania**
-#### **Subtast 1: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?"**
+#### **Subtast 1: Dlaczego zdecydowałam się wziąć udział w wyzwaniu Dare IT Challenge?"**
 
 Cześć, mam na imię Asia i mam ponad roczne doświadczenie w testowaniu manualnym. W mojej firmie od paru miesięcy zajmuje się również testami automatycznymi.
 To było dla mnie spore wyzwanie, ale zarazem też ekscytujące, bo udało mi się przyswoić sporo wiedzy i każdy "PASSED" wywołuje uśmiech na mojej twarzy. 
