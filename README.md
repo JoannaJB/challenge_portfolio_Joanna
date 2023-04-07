@@ -1,16 +1,18 @@
 
 ### **Task 1: Konfiguracja oprogramowania**
-#### **Subtast 1: Dlaczego zdecydowałam się wziąć udział w wyzwaniu Dare IT Challenge?"**
+#### **Subtask 1: Dlaczego zdecydowałam się wziąć udział w wyzwaniu Dare IT Challenge?**
 
 Cześć :wave:, mam na imię Asia i mam ponad roczne doświadczenie w testowaniu manualnym i w szukaniu bugów :bug:. W mojej firmie od paru miesięcy zajmuje się również testami automatycznymi.
 To było dla mnie spore wyzwanie, ale zarazem też ekscytujące, bo udało mi się przyswoić sporo wiedzy i każdy "PASSED" wywołuje uśmiech na mojej twarzy. 
-Choć właśnie "FAILED" najwięcej uczy motywuje do zagłębiania wiedzy.
+Choć właśnie "FAILED" najwięcej uczą i motywują do szukania rozwiązania.
 
 Testy piszę w jezyku Python :snake: za pomocą Selenium, więc to idealne szkolenie dla mnie :smiley:. Jestem jedynym testerem w zespole, więc nie mam z kim się skonsultować i wymienić wiedzą.
-Choć współpraca z programistami też jest fajna :wink:. Chciałabym usystematyzować wiedzę i dowiedzieć się nowych rzeczy, tj. raporty w testach automatycznych.
-Mam nadzieję, że dzięki kursowi nauczę się pisać lepszej jakości testy, które pomogą mi w przyszłości zastąpić część testów manualnych.
+Choć współpraca z programistami też jest fajna :wink:. Chciałabym usystematyzować wiedzę np. poznać lepsze praktyki tworzenia lokatorów i dowiedzieć się nowych rzeczy, tj. raporty w testach automatycznych.
+Mam nadzieję, że dzięki kursowi nauczę się pisać lepszej jakości testy, które pomogą mi w przyszłości zastąpić część testów manualnych. 
 Bardzo cieszę się na ten kurs i jestem zmotywowana do zdobywania nowych informacji, jak również sprawdzenie moich dotychczasowych umiejętności :muscle::woman_student:.
 
+#### **Subtask 2: Wynik egzaminu ISTQB**
+***Wynik testu:*** *8 na 14 odpowiedzi*
 
 ###### *Super inicjatywa :sunflower:,*
 ###### *Pozdrawiam,*
