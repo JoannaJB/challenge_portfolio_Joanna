@@ -41,6 +41,7 @@ Bardzo cieszę się na ten kurs i jestem zmotywowana do zdobywania nowych inform
 - //a[text()='Remind password']
 
 ***4. Wybór języka:***
+- //div[@role='button']
 - //*[@id="__next"]//div[contains(@class,'MuiSelect-select')]
 - //div[@class='MuiCardActions-root']//div[@role='button']
 - //div[@class='MuiCardActions-root']//div[contains(@class,'MuiSelect-root')]
