@@ -19,7 +19,7 @@ Bardzo cieszę się na ten kurs i jestem zmotywowana do zdobywania nowych inform
 
 ***Przykładowe selektory XPATH***
 
-***1. Login:***
+***:construction:1. Login::construction:***
 - //*[@id='login']
 - //input[@id='login']
 - //input[@name='login']
@@ -27,27 +27,27 @@ Bardzo cieszę się na ten kurs i jestem zmotywowana do zdobywania nowych inform
 - //div[@class='MuiCardContent-root']//input[@id='login']
 - /html/body/div[1]/form/div/div[1]/div[1]/div/input
 
-***2. Hasło:***
+***:construction:2. Hasło::construction:***
 - //*[@id='password']
 - //input[@id='password']
 - //input[@name='password']
 - //input[@type='password'][contains(@class,'MuiInput-input')]
 - //div[@class='MuiCardContent-root']//input[@id='password']
 
-***3. Przypomnij hasło:***
+***:construction:3. Przypomnij hasło::construction:***
 - //*[@id="__next"]//a
 - //a[contains(@class,'MuiTypography-root')]
 - //div[@class='MuiCardContent-root']//a
 - //a[text()='Remind password']
 
-***4. Wybór języka:***
+***:construction:4. Wybór języka::construction:***
 - //div[@role='button']
 - //*[@id="__next"]//div[contains(@class,'MuiSelect-select')]
 - //div[@class='MuiCardActions-root']//div[@role='button']
 - //div[@class='MuiCardActions-root']//div[contains(@class,'MuiSelect-root')]
 - //div[text()='Polski'] | //div[text()='English'] 
 
-***5. Button Zaloguj:***
+***:construction:5. Button Zaloguj::construction:***
 - //span[@class='MuiButton-label']
 - //span[text()='Zaloguj'] | //span[text()='Sign in']
 - //div[@class='MuiCardActions-root']//span
