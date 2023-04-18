@@ -14,7 +14,6 @@ class LoginPage(BasePage):
     remind_password_xpath = "//a[text()='Remind password']"
     language_choice_xpath = "//div[@role='button']"
     title_of_box = "Scouts Panel"
-    # header_of_box_xpath = "//div[@class='MuiCardContent-root']//h5"
     header_of_box_xpath = "//h5"
 
     def title_of_page(self):

@@ -28,6 +28,7 @@ class TestLoginPage(unittest.TestCase):
         user_login.fill_in_login_form()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
+
     @classmethod
     def tearDown(self):
         self.driver.quit()

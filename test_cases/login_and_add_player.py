@@ -32,6 +32,7 @@ class TestLoginAndAddPlayer(unittest.TestCase):
         add_player = AddPlayer(self.driver)
         add_player.title_of_page()
         add_player.fill_in_form_add_player()
+
     @classmethod
     def tearDown(self):
         self.driver.quit()
