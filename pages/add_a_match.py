@@ -1,7 +1,7 @@
 from pages.base_page import BasePage
 
 
-class AddingMatch(BasePage):
+class AddMatch(BasePage):
     matches_xpath = "//span[text()='Matches']"
     reports_xpath = "//span[text()='Reports']"
     my_team_field_xpath = "//input[@name='myTeam']"
