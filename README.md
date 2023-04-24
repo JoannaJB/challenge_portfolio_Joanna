@@ -53,6 +53,27 @@ Bardzo cieszę się na ten kurs i jestem zmotywowana do zdobywania nowych inform
 - //div[@class='MuiCardActions-root']//span
 - //button[contains(@class,'MuiButtonBase-root')]//span
 
+### **Task 3: Pierwszy test automatyczny i asserty**
+Umiejętności nabyte, dzięki zadaniu:\
+✅ lepsze poznanie frameworka Selenium,\
+✅ klikanie w elementy na stronie,\
+✅ wypełnianie pola tekstem,\
+✅ wykorzystanie assert title,\
+✅ uruchomienie testu.
+
+### **Task 4: Refactor, debugger i przypadki testowe**
+Umiejętności nabyte, dzięki zadaniu:\
+✅ wykonanie refactoru naszego kodu,\
+✅ poznanie debuggera,\
+✅ poznanie dobrych praktyk w pisaniu przypadków testowych,\
+✅ zautomatyzowanie strony internetowej na podstawie swoich TC.
+
+
+Raport z testów:
+...
+& pytest test_cases --html=<nazwa raportu>.html --self-contained-html
+...
+
 ###### *Super inicjatywa :sunflower:,*
 ###### *Pozdrawiam,*
 ###### *Asia*

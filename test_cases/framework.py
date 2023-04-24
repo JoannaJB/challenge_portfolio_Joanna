@@ -6,6 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
+
 class Test(unittest.TestCase):
 
     @classmethod
@@ -26,6 +27,7 @@ class Test(unittest.TestCase):
 
     # Element of the first task: Try to search the Internet yourself how to get rid of the error:
     # "DeprecationWarning: executable_path has been deprecated, please pass in a Service object"
+
 
 class TestMediumPage(unittest.TestCase):
 

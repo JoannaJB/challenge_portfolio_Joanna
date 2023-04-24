@@ -13,11 +13,12 @@ class LoginPage(BasePage):
     sign_in_button_xpath = "//span[text()='Sign in']"
     remind_password_xpath = "//a[text()='Remind password']"
     language_choice_xpath = "//div[@role='button']"
-    title_of_box = "Scouts Panel"
-    header_of_box_xpath = "//h5"
+    header_title_of_box = "Scouts Panel"
+    expected_header_of_box_xpath = "//h5"
 
-    def title_of_page(self):
-        assert self.get_page_title(self.login_url) == self.expected_title
+    def check_title_of_page(self):
+        sleep(2)
+        assert self.get_page_title() == self.expected_title
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
@@ -32,13 +33,12 @@ class LoginPage(BasePage):
         self.type_in_email("user10@getnada.com")
         self.type_in_password("Test-1234")
         self.click_in_sign_in()
-        sleep(3)
+        # sleep(3)
 
     def check_header_of_box(self):
         sleep(2)
-        self.assert_element_text(self.driver, self.header_of_box_xpath, self.title_of_box)
+        self.assert_element_text(self.driver, self.expected_header_of_box_xpath, self.header_title_of_box)
 
-
-
-
+    def check_remind_password(self):
+        self.wait_for_element_to_be_visible(self.remind_password_xpath)
 
