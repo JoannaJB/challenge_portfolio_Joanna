@@ -1,27 +1,15 @@
-import os
 import unittest
-from time import sleep
 
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+import pytest
 
 from pages.add_edit_player_page import Player
 from pages.dashboard_page import Dashboard
 from pages.login_page import LoginPage
-from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
+from test_cases.conftest import Setup
 
 
-class TestLoginAndAddPlayerAndEdit(unittest.TestCase):
-
-    @classmethod
-    def setUp(self):
-        os.chmod(DRIVER_PATH, 755)
-        # self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
-        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
-        self.driver.maximize_window()
-        self.driver.implicitly_wait(IMPLICITLY_WAIT)
+@pytest.mark.usefixtures("setup")
+class TestLoginAndAddPlayerAndEdit(unittest.TestCase, Setup):
 
     def test_login_add_player_and_edit(self):
         user_login = LoginPage(self.driver)
@@ -37,7 +25,3 @@ class TestLoginAndAddPlayerAndEdit(unittest.TestCase):
         player.check_header_of_box_after_add_player()
         player.edit_existing_player()
         player.check_district()
-
-    @classmethod
-    def tearDown(self):
-        self.driver.quit()

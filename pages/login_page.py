@@ -15,6 +15,7 @@ class LoginPage(BasePage):
     language_choice_xpath = "//div[@role='button']"
     header_title_of_box = "Scouts Panel"
     expected_header_of_box_xpath = "//h5"
+    invalid_login_password_xpath = "//span[text()='Identifier or password invalid.']"
 
     def check_title_of_page(self):
         sleep(2)
@@ -35,10 +36,21 @@ class LoginPage(BasePage):
         self.click_in_sign_in()
         # sleep(3)
 
+    def fill_in_login_form_fail_data(self):
+        self.type_in_email("mail@gmail.com")
+        self.type_in_password("Haslo000")
+        self.click_in_sign_in()
+
     def check_header_of_box(self):
         sleep(2)
         self.assert_element_text(self.driver, self.expected_header_of_box_xpath, self.header_title_of_box)
 
     def check_remind_password(self):
         self.wait_for_element_to_be_visible(self.remind_password_xpath)
+
+    def check_text_invalid_login_password(self):
+        self.wait_for_element_to_be_visible(self.invalid_login_password_xpath)
+        self.assert_element_text(self.driver, self.invalid_login_password_xpath, "Identifier or password invalid.")
+        sleep(2)
+
 

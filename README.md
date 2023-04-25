@@ -68,11 +68,67 @@ Umiejętności nabyte, dzięki zadaniu:\
 ✅ poznanie dobrych praktyk w pisaniu przypadków testowych,\
 ✅ zautomatyzowanie strony internetowej na podstawie swoich TC.
 
+---
 
-Raport z testów:
-...
+### Opis projektu
+
+Strona, którą testuje to: https://scouts-test.futbolkolektyw.pl/en/login?redirected=true. Jest to platforma do zarządzania szkółką piłkarską. W moich przypadkach testowych sprawdzam funkcjonalność logowania, wylogowywania, sprawdzania tytułów, nagłówków, dodawanie i edytowanie graczy, dodawanie meczy.
+
+
+### Wymagania
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+Testy automatyczne napisane są w języku Python wykorzystują framework Selenium. Selenium to popularny zestaw narzędzi do testowania aplikacji internetowych. Biblioteka pozwala na automatyzację przeglądarek internetowych, takich jak Chrome, Firefox czy Edge, umożliwiając symulację akcji użytkownika i weryfikację stanu aplikacji. W języku Python, do automatyzacji przeglądarek używam biblioteki selenium.webdriver.
+Aby rozpocząć testowanie z użyciem Selenium, należy mieć zainstalowany sterownik przeglądarki internetowej, na przykład ChromeDriver dla przeglądarki Google Chrome. Sterownik ten umożliwia Selenium interakcję z przeglądarką internetową. Używam oprogramowania Linux, w wersji Ubuntu 20.04, przedstawiona instalacja jest, dla tego oprogramowania.
+
+### Instalacja
+
+Projekt wymaga wersji Pythona 3.11.3. Jeśli nie masz zainstalowanej wersji Pythona, możesz ją zainstalować za pomocą menedżera pakietów apt-get:
+
+```python
+& sudo apt-get update
+& sudo apt-get install python3.11
+```
+
+Zainstalowanie Selenium z wykorzystaniem polecenia pip:
+
+```python
+& pip install Selenium
+```
+
+Projekt wykorzystuje framework Pytest do uruchamiania testów automatycznych. Aby zainstalować Pytest, użyj polecenia pip:
+
+```python
+& pip instal pytest
+```
+
+Projekt wymaga ChromeDriverManager, który jest menedżerem sterowników przeglądarek dla biblioteki Selenium. Aby zainstalować ChromeDriverManager, użyj polecenia pip:
+
+```python
+& pip install webdriver-manager
+```
+
+Projekt wykorzystuje plugin pytest-html do generowania raportów HTML z wynikami testów. Aby zainstalować pytest-html, użyj polecenia pip:
+
+```python
+& pip intall pytest-html
+```
+
+### Uruchomienie testów
+
+Uruchomienie scenariuszy w terminalu:
+
+```python
+& pytest test_cases
+```
+
+Aby uzyskać raport z testów:
+
+```python
 & pytest test_cases --html=<nazwa raportu>.html --self-contained-html
-...
+```
+
+Raport można otworzyć w przeglądarce internetowej
 
 ###### *Super inicjatywa :sunflower:,*
 ###### *Pozdrawiam,*
