@@ -1,5 +1,3 @@
-from time import sleep
-
 from pages.base_page import BasePage
 
 
@@ -17,7 +15,7 @@ class LoginPage(BasePage):
     invalid_login_password_xpath = "//span[text()='Identifier or password invalid.']"
 
     def check_title_of_page(self):
-        sleep(2)
+        self.wait_for_element_to_be_visible(self.expected_header_of_box_xpath)
         assert self.get_page_title() == self.expected_title
 
     def type_in_email(self, email):
@@ -40,7 +38,6 @@ class LoginPage(BasePage):
         self.click_in_sign_in()
 
     def check_header_of_box(self):
-        sleep(2)
         self.assert_element_text(self.driver, self.expected_header_of_box_xpath, self.header_title_of_box)
 
     def check_remind_password(self):

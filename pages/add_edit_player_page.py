@@ -8,6 +8,7 @@ from pages.base_page import BasePage
 class Player(BasePage):
     expected_title = "Add player"
     expected_title_xpath = "//span[text()='Add player']"
+    table_xpath = "//table[@class='MuiTable-root']"
     header_title_after_add_player = "Edit player Jan Kowalski"
     header_of_box_after_add_player_xpath = "//span[text()='Edit player Jan Kowalski']"
     add_player_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
@@ -39,11 +40,11 @@ class Player(BasePage):
     button_clear_xpath = "//span[text()='Clear']"
 
     def check_title_of_page(self):
+        sleep(2)
         self.wait_for_element_to_be_visible(self.expected_title_xpath)
         assert self.get_page_title() == self.expected_title
 
     def check_header_of_box_after_add_player(self):
-        sleep(2)
         self.assert_element_text(self.driver, self.header_of_box_after_add_player_xpath,
                                  self.header_title_after_add_player)
 
@@ -84,7 +85,6 @@ class Player(BasePage):
             self.wait_for_element_to_be_clickable(self.masovia_xpath)
         elif district == "Warmia-Mazuria":
             self.wait_for_element_to_be_clickable(self.warmia_and_mazuria_xpath)
-            # self.field_send_keys(self.warmia_and_mazuria_xpath, district)
         elif district == "Lesser Poland":
             self.wait_for_element_to_be_clickable(self.less_poland_xpath)
         elif district == "Lublin":
@@ -97,7 +97,6 @@ class Player(BasePage):
         return district
 
     def check_district(self):
-        sleep(2)
         self.assert_element(self.choose_district(self.district), "Warmia-Mazuria")
 
     def type_main_position(self, main_position):
@@ -123,6 +122,4 @@ class Player(BasePage):
         self.choose_leg("right")
         self.type_club('Klub piłkarski')
         self.choose_district('Warmia-Mazuria')
-        # sleep(2)
         self.click_button_submit()
-        # sleep(2)
