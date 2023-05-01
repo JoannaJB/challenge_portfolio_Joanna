@@ -118,49 +118,35 @@ Projekt wymaga wersji Pythona 3.11.3. Jeśli nie masz zainstalowanej wersji Pyth
 menedżera pakietów apt-get:
 
 ```python
-sudo
-apt - get
-update
-sudo
-apt - get
-install
-python3
-.11
+$ sudo apt-get update
+$ sudo apt-get install python3.11
 ```
 
 Zainstalowanie Selenium z wykorzystaniem polecenia pip:
 
 ```python
-pip
-install
-Selenium
+$ pip install Selenium
 ```
 
 Projekt wykorzystuje framework Pytest do uruchamiania testów automatycznych. Aby zainstalować Pytest, użyj polecenia
 pip:
 
 ```python
-pip
-instal
-pytest
+$ pip install pytest
 ```
 
 Projekt wymaga ChromeDriverManager, który jest menedżerem sterowników przeglądarek dla biblioteki Selenium. Aby
 zainstalować ChromeDriverManager, użyj polecenia pip:
 
 ```python
-pip
-install
-webdriver - manager
+$ pip install webdriver-manager
 ```
 
 Projekt wykorzystuje plugin pytest-html do generowania raportów HTML z wynikami testów. Aby zainstalować pytest-html,
 użyj polecenia pip:
 
 ```python
-pip
-intall
-pytest - html
+$ pip install pytest-html
 ```
 
 ### Uruchomienie testów
@@ -168,16 +154,13 @@ pytest - html
 Uruchomienie scenariuszy w terminalu:
 
 ```python
-pytest
-test_cases
+$ pytest test_cases
 ```
 
 Aby uzyskać raport z testów:
 
 ```python
-pytest
-test_cases - -html = reports / < nazwa
-raportu >.html - -self - contained - html
+$ pytest test_cases --html=reports/<nazwa raportu>.html --self-contained-html
 ```
 
 Raport można otworzyć w przeglądarce internetowej
