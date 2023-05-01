@@ -84,6 +84,7 @@ class Player(BasePage):
             self.wait_for_element_to_be_clickable(self.masovia_xpath)
         elif district == "Warmia-Mazuria":
             self.wait_for_element_to_be_clickable(self.warmia_and_mazuria_xpath)
+            # self.field_send_keys(self.warmia_and_mazuria_xpath, district)
         elif district == "Lesser Poland":
             self.wait_for_element_to_be_clickable(self.less_poland_xpath)
         elif district == "Lublin":
@@ -96,19 +97,21 @@ class Player(BasePage):
         return district
 
     def check_district(self):
+        sleep(2)
         self.assert_element(self.choose_district(self.district), "Warmia-Mazuria")
 
     def type_main_position(self, main_position):
         self.field_send_keys(self.main_position_xpath, main_position)
 
     def click_button_submit(self):
+        self.wait_for_element_to_be_visible(self.button_submit_xpath)
         self.click_on_the_element(self.button_submit_xpath)
 
     def fill_in_form_add_player(self):
         self.type_name('Jan')
         self.type_surname('Kowalski')
         self.type_age('14.05.1994')
-        self.type_main_position('atak')
+        self.type_main_position('Atak')
         self.click_button_submit()
         sleep(2)
 
@@ -120,4 +123,6 @@ class Player(BasePage):
         self.choose_leg("right")
         self.type_club('Klub piłkarski')
         self.choose_district('Warmia-Mazuria')
+        # sleep(2)
         self.click_button_submit()
+        # sleep(2)

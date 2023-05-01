@@ -5,14 +5,11 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-from pages.add_edit_player_page import Player
-from pages.dashboard_page import Dashboard
 from pages.login_page import LoginPage
-from pages.side_panel import SidePanel
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestLoginAndAddPlayerAndEdit(unittest.TestCase):
+class TestLoginPageFailData(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -23,23 +20,12 @@ class TestLoginAndAddPlayerAndEdit(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_login_add_player_and_edit(self):
+    def test_login_to_the_system_fail_data(self):
         user_login = LoginPage(self.driver)
         user_login.check_title_of_page()
         user_login.check_header_of_box()
-        user_login.fill_in_login_form()
-        dashboard_page = Dashboard(self.driver)
-        dashboard_page.check_title_of_page()
-        dashboard_page.click_add_player()
-        player = Player(self.driver)
-        player.check_title_of_page()
-        player.fill_in_form_add_player()
-        player.check_header_of_box_after_add_player()
-        player.edit_existing_player()
-        player.check_district()
-        side_panel = SidePanel(self.driver)
-        side_panel.click_main_page()
-        dashboard_page.check_last_created_player()
+        user_login.fill_in_login_form_fail_data()
+        user_login.check_text_invalid_login_password()
 
     @classmethod
     def tearDown(self):

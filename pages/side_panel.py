@@ -1,8 +1,3 @@
-from time import sleep
-
-from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.core import driver
-
 from pages.base_page import BasePage
 
 
@@ -19,3 +14,6 @@ class SidePanel(BasePage):
 
     def click_sign_out(self):
         self.click_on_the_element(self.sign_out_xpath)
+
+    def click_main_page(self):
+        self.click_on_the_element(self.main_page_xpath)

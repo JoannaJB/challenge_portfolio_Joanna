@@ -1,12 +1,11 @@
 from time import sleep
 
-from selenium.webdriver.common.by import By
-
 from pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
     expected_title = "Scouts panel - sign in"
+    expected_title_xpath = "//title[text()='Scouts panel - sign in']"
     login_url = "https://scouts-test.futbolkolektyw.pl/en"
     login_field_xpath = "//*[@id='login']"
     password_field_xpath = "//input[@id='password']"
@@ -34,7 +33,6 @@ class LoginPage(BasePage):
         self.type_in_email("user10@getnada.com")
         self.type_in_password("Test-1234")
         self.click_in_sign_in()
-        # sleep(3)
 
     def fill_in_login_form_fail_data(self):
         self.type_in_email("mail@gmail.com")
@@ -51,6 +49,3 @@ class LoginPage(BasePage):
     def check_text_invalid_login_password(self):
         self.wait_for_element_to_be_visible(self.invalid_login_password_xpath)
         self.assert_element_text(self.driver, self.invalid_login_password_xpath, "Identifier or password invalid.")
-        sleep(2)
-
-

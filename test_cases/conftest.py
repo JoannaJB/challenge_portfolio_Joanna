@@ -1,32 +1,9 @@
 import os
 
 import pytest
-import pytest_html
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.remote.webdriver import WebDriver
-from selenium import webdriver
-
-import pytest
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-
-from utils.settings import IMPLICITLY_WAIT, DRIVER_PATH
 
 
-class Setup:
-    @pytest.fixture(scope="class")
-    def setup(self):
-        # Create a new instance of the WebDriver and open browser
-        os.chmod(DRIVER_PATH, 755)
-        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
-        self.driver.maximize_window()
-        self.driver.implicitly_wait(IMPLICITLY_WAIT)
-        # Yield the driver so that it can be used in the test function
-        yield self.driver
-
-        # Quit the driver after the test finishes
-        self.driver.quit()
+class Report:
 
     @pytest.hookimpl(hookwrapper=True)
     def pytest_runtest_makereport(self, item, call):
