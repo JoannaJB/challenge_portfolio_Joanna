@@ -17,10 +17,6 @@ testów manualnych.
 Bardzo cieszę się na ten kurs i jestem zmotywowana do zdobywania nowych informacji, jak również sprawdzenie moich
 dotychczasowych umiejętności :muscle::woman_student:.
 
-#### **Subtask 2: Wynik egzaminu ISTQB**
-
-***Wynik testu:*** *8 na 14 odpowiedzi*
-
 ### **Task 2: Selektory**
 
 #### **Substask 2: Wyszukiwanie selektorów na stronie logowania. Wymień wszystkie elementy, które znajdują się na
